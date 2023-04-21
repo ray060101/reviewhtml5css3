@@ -1,0 +1,49 @@
+/* 設定整個表單的樣式 */
+.registration-form {
+    text-align: left; /* 文字靠左對齊 */
+    max-width: 600px; /* 最大寬度為 600 像素 */
+    margin: 0 auto; /* 水平置中 */
+  }
+  
+  /* 設定表單元素標籤的樣式 */
+  .registration-form label {
+    display: flex; /* 以 flex 方式排列子元素 */
+    flex-direction: row; /* 沿水平軸排列 */
+    align-items: center; /* 元素垂直置中對齊 */
+    margin-bottom: 20px; /* 下方留白 20 像素 */
+    font-size: 18px; /* 字體大小為 18 像素 */
+  }
+  
+  /* 設定表單輸入元素的樣式 */
+  .registration-form label > input[type="text"],
+  .registration-form label > input[type="tel"],
+  .registration-form label > input[type="email"],
+  .registration-form label > input[type="date"],
+  .registration-form label > input[type="range"],
+  .registration-form label > select {
+    width: 300px; /* 寬度為 300 像素 */
+    padding: 10px; /* 上下左右各留白 10 像素 */
+    border-radius: 5px; /* 圓角為 5 像素 */
+    border: 1px solid gray; /* 邊框線粗細為 1 像素，顏色為灰色 */
+  }
+  
+  /* 設定表單輸入元素標籤後方的提示文字的樣式 */
+  .registration-form label > .hint {
+    margin-left: 10px; /* 左邊留白 10 像素 */
+  }
+  
+  /* 設定表單提交按鈕的樣式 */
+  .registration-form input[type="submit"] {
+    background-color: #4CAF50; /* 背景色為綠色 */
+    color: white; /* 文字顏色為白色 */
+    border: none; /* 沒有邊框線 */
+    border-radius: 5px; /* 圓角為 5 像素 */
+    padding: 10px 20px; /* 上下留白 10 像素，左右留白 20 像素 */
+    cursor: pointer; /* 滑鼠移到按鈕上時顯示手型游標 */
+  }
+  
+  /* 設定表單提交按鈕在滑鼠移到上方時的樣式 */
+  .registration-form input[type="submit"]:hover {
+    background-color: #3e8e41; /* 背景色為深綠色 */
+  }
+  
