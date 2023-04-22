@@ -46,7 +46,8 @@ function Course1form() {
     <h2>註冊</h2>
       <label >
          姓名:
-        <input type="text" value={name} onChange={handleNameChange} required />
+        <input type="text" value={name} onChange={handleNameChange} required 
+        placeholder = "請輸入姓名"/>
       </label>
     <br />
       <label>
@@ -56,12 +57,14 @@ function Course1form() {
     <br />
       <label>
         電話：
-        <input type="tel" pattern="^09[0-9]{8}$" required value={phone} onChange={handlePhoneChange} required />
+        <input type="tel" pattern="^09[0-9]{8}$" required value={phone} onChange={handlePhoneChange} 
+        placeholder = "請輸入手機 (格式為09XXXXXXXX)"/>
       </label>
     <br />
       <label>
         email:
-        <input type="email" value={email} onChange={handleEmailChange} required />
+        <input type="email" value={email} onChange={handleEmailChange} required 
+        placeholder = "請輸入email"/>
       </label>
     <br />
       <label>
